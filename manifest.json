@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "Mood Calendar",
+  "version": "0.1",
+  "description": "Track your mood for better living",
+  "chrome_url_overrides"  : {
+    "newtab" : "index.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "sass": ["_page.scss", "_typography.scss", "_button.scss", "_form.scss", "_icon.scss", "_list.scss", "_footer.scss", "_main.scss", "_wrapper.scss", "_functions.scss", "mixins.scss", "_skel.scss", "_vars.scss", "main.scss", "noscript.scss"],
+      "css": ["assets/css/main.css", "assets/css/font-awesome.min.css", "assets/css/noscript.css"],
+      "js": ["https://code.jquery.com/jquery-3.1.1.min.js", "assets/js/main.js", "assets/js/respond.min.js", "assets/js/html5shiv.js"]
+    }
+  ]
+}
